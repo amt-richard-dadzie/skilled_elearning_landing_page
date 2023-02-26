@@ -27,9 +27,15 @@ h3 {
     font-weight: 900;
     line-height: 1;
     color: var(--main-text-color);
+    margin-bottom: 1em;
 }
 p {
     color: var(--sub-text-color);
+    margin-bottom: 2em;
+}
+a{
+    text-decoration: none;
+    color: var(--anchor-text-color);
 }
 .btn {
     cursor: pointer;
@@ -39,9 +45,60 @@ p {
     color: var(--neutral-color);
     padding: 0.7rem 1rem;
 }
- main {
-    background: linear-gradient(to bottom, #fff,  #F1F2FE, #F8F9FF);
- }
+.hero-btn {
+    background: linear-gradient(to bottom, #F02AA6, #FF6F48);
+}
+.footer-btn {
+    background: linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+main {
+    background: linear-gradient(to bottom, #fff,  #e1e4ff, #e4e8fe);
+    padding-bottom: 6.25rem;
+}
 .footer {
     background-color: var(--main-text-color);
+}
+.nav {
+    display: flex;
+    padding-block: 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-broader {
+    padding-block: 1.5rem;
+}
+.container {
+    margin-inline: auto;
+    width: min(90%, 80.5rem);
+}
+.container-narrow {
+    width: min(90%, 45.5rem);
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+.course {
+    padding: 1rem;
+    border-radius: 1em;
+    background-color: var(--neutral-color);
+    position: relative;
+}
+.course img {
+    position: absolute;
+    top: -25px;
+}
+.course h3 {
+    margin-top: 1.5625rem;
+}
+.general {
+    background: linear-gradient(to bottom, #F02AA6, #FF6F48);
+}
+.general h3 {
+    color: var(--neutral-color);
 }

@@ -13,82 +13,94 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <img src="assets/logo-dark.svg" alt="skilled page logo">
-            </div>
-            <button class="btn">Get Started</button>
-        </nav>
-        <section>
-            <div>
-                <h1>Maximize skill, minimize budget</h1>
-                <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+        <div class="container">
+            <nav class="nav">
+                <div>
+                    <img src="assets/logo-dark.svg" alt="skilled page logo">
+                </div>
                 <button class="btn">Get Started</button>
-            </div>
-            <div>
-                <picture>
-                    <source media="(min-width: 768px)"
-                            srcset="assets/image-hero-desktop.png 1046w,
-                                    assets/image-hero-desktop.webp 1046w,
-                                    assets/image-hero-desktop@2x.webp 2092w,
-                                    assets/image-hero-desktop@2x.png 2092w"
-                            sizes="50vw"        >
-                    <source media="(min-width: 400px)"
-                            srcset="assets/image-hero-tablet.png 650w,
-                                    assets/image-hero-tablet.webp 650w,
-                                    assets/image-hero-tablet@2x.webp 1390w,
-                                    assets/image-hero-tablet@2x.png 1390w">
-                    <source srcset="assets/image-hero-mobile.png 435w,
-                                    assets/image-hero-mobile.webp 435w,
-                                    assets/image-hero-mobile@2x.webp 870w,
-                                    assets/image-hero=mobile@2x.png 870w">
-                    <img src="assets/image-hero-mobile.png" alt="hero-image">
-                </picture>
-            </div>
+            </nav>
+        </div>
+        <section>
+            <div class="container">
+                <div>
+                    <div class=" container-narrow">
+                        <h1>Maximize skill, minimize budget</h1>
+                        <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+                    </div>
+                    <button class="btn hero-btn">Get Started</button>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="assets/image-hero-desktop.png 1046w,
+                                        assets/image-hero-desktop.webp 1046w,
+                                        assets/image-hero-desktop@2x.webp 2092w,
+                                        assets/image-hero-desktop@2x.png 2092w"
+                                sizes="50vw"        >
+                        <source media="(min-width: 413px)"
+                                srcset="assets/image-hero-tablet.png 650w,
+                                        assets/image-hero-tablet.webp 650w,
+                                        assets/image-hero-tablet@2x.webp 1390w,
+                                        assets/image-hero-tablet@2x.png 1390w">
+                        <source srcset="assets/image-hero-mobile.png 435w,
+                                        assets/image-hero-mobile.webp 435w,
+                                        assets/image-hero-mobile@2x.webp 870w,
+                                        assets/image-hero=mobile@2x.png 870w">
+                        <img src="assets/image-hero-mobile.png" alt="hero-image">
+                    </picture>
+                </div>
+        </div>
         </section>
     </header>
     <main>
-        <section>
-            <div class="course">
-                <h3>Check out our most popular courses!</h3>
+            <div class="container">
+                <section class="flex">
+                    <div class="course general">
+                        <h3>Check out our most popular courses!</h3>
+                    </div>
+                    <div class="course ">
+                        <img src="assets/icon-animation.svg" alt="animation course icon">
+                        <h3>Animation</h3>
+                        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+                        <a href="#">Get Started</a>
+                    </div>
+                    <div class="course">
+                        <img src="assets/icon-design.svg" alt="design course icon">
+                        <h3>Design</h3>
+                        <p>Create beautiful, usable interfaces to help shape the future of how the web looks</p>
+                        <a href="#">Get Started</a>
+                    </div>
+                    <div class="course">
+                        <img src="assets/icon-photography.svg" alt="photography course icon">
+                        <h3>Photography</h3>
+                        <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+                        <a href="#">Get Started</a>
+                    </div>
+                    <div class="course">
+                        <img src="assets/icon-crypto.svg" alt="crypto course icon">
+                        <h3>Crypto</h3>
+                        <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+                        <a href="#">Get Started</a>
+                    </div>
+                    <div class="course">
+                        <img src="assets/icon-business.svg" alt="business course icon">
+                        <h3>Business</h3>
+                        <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+                        <a href="#">Get Started</a>
+                    </div>
+                </section>
             </div>
-            <div class="course">
-                <img src="assets/icon-animation.svg" alt="animation course icon">
-                <h3>Animation</h3>
-                <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
-                <a href="#">Get Started</a>
-            </div>
-            <div class="course">
-                <img src="assets/icon-design.svg" alt="design course icon">
-                <h3>Design</h3>
-                <p>Create beautiful, usable interfaces to help shape the future of how the web looks</p>
-                <a href="#">Get Started</a>
-            </div>
-            <div class="course">
-                <img src="assets/icon-photography.svg" alt="photography course icon">
-                <h3>Photography</h3>
-                <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
-                <a href="#">Get Started</a>
-            </div>
-            <div class="course">
-                <img src="assets/icon-crypto.svg" alt="crypto course icon">
-                <h3>Crypto</h3>
-                <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
-                <a href="#">Get Started</a>
-            </div>
-            <div class="course">
-                <img src="assets/icon-business.svg" alt="business course icon">
-                <h3>Business</h3>
-                <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
-                <a href="#">Get Started</a>
-            </div>
-        </section>
     </main>
     <footer class="footer">
-        <div class="logo-img">
-            <img src="assets/logo-light.svg" alt="skilled_page_logo">
+        <div class="container">
+            <nav class="nav nav-broader">
+                <div class="logo-img">
+                    <img src="assets/logo-light.svg" alt="skilled_page_logo">
+                </div>
+                <button class="btn footer-btn">Get Started</button>
+            </nav>
         </div>
-        <button class="btn footer-btn">Get Started</button>
     </footer>
 </body>
 </html>
