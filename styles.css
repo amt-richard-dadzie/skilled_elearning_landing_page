@@ -1,0 +1,47 @@
+:root {
+    --main-text-color: #13183F;
+    --sub-text-color: #83869A;
+    --anchor-text-color: #F74780;
+
+    --neutral-color: #fff;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family:'Plus Jakarta Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+body,
+h1,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h3 {
+    font-weight: 900;
+    line-height: 1;
+    color: var(--main-text-color);
+}
+p {
+    color: var(--sub-text-color);
+}
+.btn {
+    cursor: pointer;
+    background-color: var(--main-text-color);
+    border: none;
+    border-radius: 20px;
+    color: var(--neutral-color);
+    padding: 0.7rem 1rem;
+}
+ main {
+    background: linear-gradient(to bottom, #fff,  #F1F2FE, #F8F9FF);
+ }
+.footer {
+    background-color: var(--main-text-color);
+}
