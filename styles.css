@@ -38,6 +38,9 @@ a{
     text-decoration: none;
     color: var(--anchor-text-color);
 }
+a:hover {
+    opacity: 0.5;
+}
 .btn {
     cursor: pointer;
     background-color: var(--main-text-color);
@@ -46,11 +49,21 @@ a{
     color: var(--neutral-color);
     padding: 0.7rem 1rem;
 }
+.nav-btn:hover {
+    background: #666CA3;
+    transition: 0.5s ease-in-out;
+}
 .hero-btn {
     background: linear-gradient(to bottom, #F02AA6, #FF6F48);
 }
+.hero-btn:hover {
+    background: linear-gradient(to bottom, hsl(322, 87%, 75%), hsl(13, 100%, 75%));
+}
 .footer-btn {
     background: linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+.footer-btn:hover {
+    background: linear-gradient(to bottom, hsl(237, 100%, 75%), hsl(322, 87%, 75%));
 }
 img {
     display: block;
