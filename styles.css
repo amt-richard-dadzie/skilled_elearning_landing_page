@@ -29,6 +29,7 @@ h3 {
     color: var(--main-text-color);
     margin-bottom: 1em;
 }
+
 p {
     color: var(--sub-text-color);
     margin-bottom: 2em;
@@ -78,29 +79,12 @@ main {
 .container-narrow {
     width: min(90%, 45.5rem);
 }
+
 .flex {
     display: flex;
     flex-direction: column;
     row-gap: 2em;
 }
-@media only screen and (min-width: 412px) {
-    .flex {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 1.5em;
-    }
-
-    .flex > * {
-        flex-basis: 40%;
-        flex-grow: 1;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .flex > * {
-        flex-basis: 30%;
-    }
-}
-
 .course {
     padding: 1rem;
     border-radius: 1em;
@@ -119,4 +103,73 @@ main {
 }
 .general h3 {
     color: var(--neutral-color);
+}
+
+
+/* Tablet View Rules */
+@media only screen and (min-width: 412px) {
+    header {
+        position: relative;
+        overflow: hidden;
+        min-height: 30rem;
+    }
+    .container-narrow {
+        width: min(90%, 20rem);
+    }
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1.5em;
+    }
+    .primary-content {
+        margin-top: 3em;
+    }
+    .flex > * {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+    .image-container {
+        position: absolute;
+        top: 0px;
+        right: -350px;
+        z-index: -1;
+    }
+    .image {
+        width: 70%;
+    }
+}
+/* Desktop View Rules */
+@media only screen and (min-width: 768px) {
+    .flex > * {
+        flex-basis: 30%;
+    }
+    header {
+        min-height: 45rem;
+    }
+    .container-narrow {
+        width: min(90%, 32rem);
+    }
+    .container-narrow h1 {
+        font-size: 3.5rem;
+    }
+    .container-narrow p {
+        font-size: 1.3rem;
+    }
+    .primary-content {
+        margin-top: 8em;
+    }
+    .image-container {
+        position: absolute;
+        top: -80px;
+        right: -160px;
+    }
+    .image {
+        width: 100%;
+    }
+    .btn {
+        font-size: 1.2rem;
+    }
+    .general h3 {
+        font-size: 1.9rem;
+    }
 }
