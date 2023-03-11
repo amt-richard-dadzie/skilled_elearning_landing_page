@@ -36,6 +36,7 @@ p {
 }
 a{
     text-decoration: none;
+    font-weight: 900;
     color: var(--anchor-text-color);
 }
 a:hover {
@@ -87,12 +88,14 @@ main {
 }
 .container {
     margin-inline: auto;
-    width: min(90%, 80.5rem);
+    width: min(90%, 69.375rem);
 }
 .container-narrow {
-    width: min(90%, 45.5rem);
+    width: min(100%, 45.5rem);
 }
-
+.container-narrow h1 {
+    font-size: 2.5rem;
+}
 .flex {
     display: flex;
     flex-direction: column;
@@ -109,18 +112,21 @@ main {
     top: -25px;
 }
 .course h3 {
-    margin-top: 1.5625rem;
+    margin-top: 4rem;
 }
 .general {
-    background: linear-gradient(to bottom, #F02AA6, #FF6F48);
+    padding: 1.5rem;
+    border-radius: 1em;
+    background: linear-gradient(to bottom,  #FF6F48, #F02AA6);
 }
 .general h3 {
+    font-size: 1.5rem;
     color: var(--neutral-color);
 }
 
 
 /* Tablet View Rules */
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: 430px) {
     header {
         position: relative;
         overflow: hidden;
@@ -128,6 +134,12 @@ main {
     }
     .container-narrow {
         width: min(90%, 20rem);
+    }
+    .container-narrow h1 {
+        font-size: 2.0rem;
+    }
+    .container-narrow p {
+        font-size: 1rem;
     }
     .flex {
         flex-direction: row;
@@ -141,10 +153,23 @@ main {
         flex-basis: 40%;
         flex-grow: 1;
     }
+    .general {
+        padding: 1.5rem;
+        border-radius: 1em;
+    }
+    .general h3 {
+        margin-top: 1.5rem;
+    }
+    .course h3 {
+        margin-top: 2.5rem;
+    }
+    .course p {
+        font-size: 1rem;
+    }
     .image-container {
         position: absolute;
-        top: 0px;
-        right: -350px;
+        top: -10%;
+        right: -55%;
         z-index: -1;
     }
     .image {
@@ -152,9 +177,9 @@ main {
     }
 }
 /* Desktop View Rules */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 770px) {
     .flex > * {
-        flex-basis: 30%;
+        flex-basis: 31.54%;
     }
     header {
         min-height: 45rem;
@@ -172,17 +197,38 @@ main {
         margin-top: 8em;
     }
     .image-container {
-        position: absolute;
-        top: -80px;
-        right: -180px;
+        top: -12%;
+        right: -14%;
+    }
+    .general {
+        align-self: center;
+        padding: 1.5rem;
+        border-radius: 1em;
+        height: 320px;
+    }
+    .general h3 {
+        font-size: 2.3rem;
+        margin-top: 3.5rem;
+    }
+    .course {
+        padding: 0 2rem;
+        min-height: 340px;
+    }
+    .course h3 {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+    .course p {
+        font-size: 1.125rem;
+    }
+    .shift-down {
+        display: block;
+        padding-top: 1.5rem;
     }
     .image {
         width: 100%;
     }
     .btn {
         font-size: 1.2rem;
-    }
-    .general h3 {
-        font-size: 1.9rem;
     }
 }
